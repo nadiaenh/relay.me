@@ -7,22 +7,18 @@
 "content_scripts":[
     {
       "matches":[
-        ""<all_urls>"",
-      ],
-      "js": ["content.js"]
+        ""<all_urls>""
+      ]
     }
   ],
 "browser_action": {
     "default_icon": "icon.png",
+    "default_title": "Relay.me",
     "default_popup": "popup.html"
   },
-"background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
 "permissions": [
     "activeTab",
-    "storage",
-    "https://ajax.googleapis.com/"
+    "tabs",
+    "https://airtable.com/*"
   ]
 }
