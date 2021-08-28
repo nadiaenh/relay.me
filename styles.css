@@ -1,36 +1,53 @@
-/* style.css*/
-.header {
-    background-color: #FEE2D5;
-    text-align: center;
-    width: 600px;
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #444444;
 }
 
-.profile {
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #444444;
+}
+
+div {
     text-align: center;
-    width: 600px;
+    width: 300px;
+}
+
+.header {
+    background-color: #FEE2D5; 
 }
 
 .footer {
-    text-align: center;
-    width: 600px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .update {
-    background-color: #cfdfff;
     border-radius: 4px;
+    background-color: #9cc7ff;
+    border: none;
     color: #2750AE;
     text-align: center;
+    font-size: 14px;
+    padding: 9px 32px;
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.container {
-    text-align: center;
+.update:hover {
+    opacity: 1;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 45px;
+    height: 26px;
 }
 
 .switch input {
@@ -49,16 +66,16 @@
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 26px;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -66,15 +83,32 @@
 }
 
 input:checked + .slider {
-    background-color: #20c933;
+    background-color: #93e088; /*greenLight1*/
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #20c933;
+    box-shadow: 0 0 1px #93e088; /*greenLight1*/
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.extra {
+    border-radius: 4px;
+    background-color: #d1f7c4; /*greenLight2*/
+    border: none;
+    color: #338a17; /*greenDark1*/
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 8px;
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.extra:hover {
+    opacity: 1;
 }

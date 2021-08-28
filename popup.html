@@ -10,7 +10,7 @@
         <!-- TODO: Change background colour of header, include <div>?-->
 
         <div class = "header">
-            <h2>Welcome to relay.me</h2>
+            <h4>Welcome to relay.me</h4>
 
         </div>
 
@@ -18,31 +18,31 @@
         <br>
         <br>
         <br>
-        <div id="data"></div>
-        <input type="text" id="text"></input>
-        <button id="set">Enter your email</button>
-        <script src="popup.js"></script>
+
+        <!-- "Update Profile" section-->
         <div class="profile">
-
-            <!-- "Update Profile" section-->
-
             <p>Is your profile up to date?</p>
             <button class="update" id="updateProfile">
-                <p>Update your profile!</p>
+                <b>Update your profile</b>
             </button>
+        </div>
+        <br>
 
-            <!-- "Toggle Profile" section -->
-            <p>Display my profile to others<p>
-            <label for="displayProfile" class="switch">
+        <!-- "Toggle Profile" section -->
+        <div class ="toggle">
+            <p>Display my profile to others <label for="displayProfile" class="switch">
                 <input type="checkbox" id="displayProfile" name="displayProfile" >
                 <span class="slider"></span>
             </label>
+            </p>
         </div>
 
+        <!-- "Extras" section -->
         <div class="footer">
-
-            <button class="extra"></button>
-
+            <button class="extra" id="share">Share</button>
+            <button class="extra" id="help">Help Guide</button>
+            <button class="extra" id="bug">Report a Bug</button>
         </div>
+
     </body>
 </html>
