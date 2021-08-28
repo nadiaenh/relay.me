@@ -18,12 +18,5 @@ document.body.onload = function() {
     window.close();
   }
 
-/* Retrieving information from Airtable */
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keyF4KxNqPPVvvgQj'}).base('app8kxnMMoybxn60P');
 
-base('Applicants').find('Nadia', function(err, record) {
-    if (err) { console.error(err); return; }
-    console.log('Retrieved', record.id);
-});
-
+  
