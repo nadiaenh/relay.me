@@ -5,44 +5,78 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!-- "Welcome to Relay" section-->
+        <!-- Title -->
 
-        <!-- TODO: Change background colour of header, include <div>?-->
-
-        <div class = "header">
-            <h4>Welcome to relay.me</h4>
-
+        <div class="header">
+            <img src="logo.png" class="logo"><h4>&nbsp;relay.me dashboard</h4>
         </div>
 
-        <!-- TODO: Preview of embed (orange border ?)-->
-        <br>
-        <br>
-        <br>
-
-        <!-- "Update Profile" section-->
-        <div class="profile">
-            <p>Is your profile up to date?</p>
-            <button class="update" id="updateProfile">
-                <b>Update your profile</b>
-            </button>
-        </div>
-        <br>
-
-        <!-- "Toggle Profile" section -->
+        <!-- "Toggle Profile" section
         <div class ="toggle">
-            <p>Display my profile to others <label for="displayProfile" class="switch">
+            <p id="feedback"></p>
+            <label for="displayProfile" class="switch">
                 <input type="checkbox" id="displayProfile" name="displayProfile" >
                 <span class="slider"></span>
             </label>
-            </p>
+        </div>
+        -->
+
+        <!-- Main section-->
+        <div>
+            <div>
+                <text class="greeting">Rue, here are your closest matches: </text>
+            </div>
+
+            <br>
+
+            <div>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Social</th>
+                            <th>Looking for</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nadia Enhaili</td>
+                            <td><a href="https://www.linkedin.com/in/nadia-enhaili/"><img src="linkedin.png" class="linkedin"></a></td>
+                            <td>Fall 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Jessica Chen</td>
+                            <td><a href="https://www.linkedin.com/in/jessica-chen-441222198/"><img src="linkedin.png" class="linkedin"></a></td>
+                            <td>New Grad</td>
+                        </tr>
+                        <tr>
+                            <td>Ivian Magalhaes</td>
+                            <td><a href="https://www.linkedin.com/in/ivianmagalhaes/"><img src="linkedin.png" class="linkedin"></a></td>
+                            <td>Summer 2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <div class="spaced">
+                &nbsp;
+                <button class="update" id="updateProfile">Update my profile</button>
+                <button class="update clipboard" id="copyClipboard">Copy to clipboard</button>
+                &nbsp;
+            </div>
         </div>
 
         <!-- "Extras" section -->
-        <div class="footer">
-            <button class="extra" id="share">Share</button>
-            <button class="extra" id="help">Help Guide</button>
-            <button class="extra" id="bug">Report a Bug</button>
+        <div>
+            <p class="extra">
+                <a href="#"><i>Invite your friends</i></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><i>How to use</i></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><i>Report a bug</i></a>
+            </p>
         </div>
-
     </body>
 </html>

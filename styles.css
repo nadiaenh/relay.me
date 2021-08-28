@@ -1,39 +1,99 @@
 p {
     font-family: Arial, sans-serif;
     font-size: 14px;
-    color: #444444;
+    color: #081528;
+}
+
+text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #081528;
 }
 
 h4 {
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #444444;
+    padding-left: 25px;
+    color: #AA4433;
 }
 
 div {
-    text-align: center;
+    text-align: left;
     width: 300px;
 }
 
-.header {
-    background-color: #FEE2D5; 
+a:link {
+    color: #081528;
 }
 
-.footer {
+.logo {
+    height: 52px;
+    width: 52px;
+    float: left;
+}
+
+.linkedin {
+    height: 28px;
+    width: 28px;
+}
+
+.greeting {
+    text-align: left;
+    font-weight: 600;
+}
+
+.header {
+    background-color: #FFDDB0;
+    vertical-align: middle;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    width: 275px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #338A17;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #338A17;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #338A17;
+}
+
+.spaced {
     display: flex;
     justify-content: space-between;
 }
 
 .update {
     border-radius: 4px;
-    background-color: #9cc7ff;
+    background-color: #D1F7C4;
     border: none;
-    color: #2750AE;
+    color: #338A17;
     text-align: center;
-    font-size: 14px;
-    padding: 9px 32px;
+    padding: 7px 12px;
     opacity: 0.8;
     transition: 0.3s;
     cursor: pointer;
@@ -43,11 +103,17 @@ div {
     opacity: 1;
 }
 
+.clipboard {
+    background-color: #FFDDB0;
+    color: #AA4433;
+}
+
+/*
 .switch {
     position: relative;
     display: inline-block;
-    width: 45px;
-    height: 26px;
+    width: 44px;
+    height: 25px;
 }
 
 .switch input {
@@ -66,14 +132,15 @@ div {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 26px;
+    border-radius: 25px;
 }
+*/
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 19px;
+    width: 19px;
     left: 3px;
     bottom: 3px;
     background-color: white;
@@ -91,24 +158,14 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
 }
 
 .extra {
-    border-radius: 4px;
-    background-color: #d1f7c4; /*greenLight2*/
-    border: none;
-    color: #338a17; /*greenDark1*/
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     padding: 8px 8px;
-    opacity: 0.8;
-    transition: 0.3s;
     cursor: pointer;
-}
-
-.extra:hover {
-    opacity: 1;
 }
