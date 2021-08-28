@@ -1,13 +1,12 @@
 {
   "manifest_version": 1,
 "name": "Relay.me",
-"description": "This extension will recommend professionals who match
-                skills/experiences for a position",
+"description": "This extension will recommend professionals who match skills/experiences for a position",
 "version": "1.0",
 "content_scripts":[
     {
       "matches":[
-        ""<all_urls>""
+        "<all_urls>"
       ]
     }
   ],
