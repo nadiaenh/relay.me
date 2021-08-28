@@ -5,7 +5,7 @@ function setCookie(){
 }
 
 function getCookie(){
-    chrome.extension.sendMessage({name: 'getloginCookie'}, function(response) {
+    chrome.extension.sendMessage({name: 'getLoginCookie'}, function(response) {
         alert(response)
     })
 }
