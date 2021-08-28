@@ -17,6 +17,3 @@ document.body.onload = function() {
     });
     window.close();
   }
-
-
-  
