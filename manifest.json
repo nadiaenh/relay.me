@@ -17,7 +17,8 @@
       "tabs",
       "https://airtable.com/*",
       "storage",
-      "cookies",
-      "pageCapture"
+      "<all_urls>",
+      "pageCapture",
+      "downloads" 
     ]
 }
