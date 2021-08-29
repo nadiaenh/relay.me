@@ -8,10 +8,10 @@ A Google Chrome extension that lets you be matched to 3 other candidates who hav
 3️⃣ Click on **Load unpacked** and select the **relay.me** folder.  
 4️⃣ The extension is now ready to use.  
 
-![screenshot](https://i.imgur.com/tDt3e3c.png)  
-
 # How to use
-To be added.
+Instructions to be added later.  
+
+![screenshot](https://i.imgur.com/tDt3e3c.png)  
 
 # Team
 Rue S.  
