@@ -12,7 +12,7 @@
       "default_popup": "popup.html"
     },
   "chrome_url_overrides": {
-      "newtab": "public/index.html"
+      "newtab": "index.html"
     },
   "options_page": "options.html",
   "permissions": [
