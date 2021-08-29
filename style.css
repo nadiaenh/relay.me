@@ -6,8 +6,25 @@ html {
   margin: 0;
 }
 
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #AA4433;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
 body {
   background-color: #FFDDB0;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #081528;
 }
 
 .middle {
@@ -25,4 +42,77 @@ body {
 
 #date {
   font-size: 24px;
+}
+
+.btn {
+    border-radius: 4px;
+    background-color: #D1F7C4;
+    border: none;
+    color: #338A17;
+    text-align: center;
+    padding: 7px 12px;
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.toggle {
+    float: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%
+}
+
+input:checked + .slider {
+    background-color: #93e088; /*greenLight1*/
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #93e088; /*greenLight1*/
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
 }

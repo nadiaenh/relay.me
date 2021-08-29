@@ -1,4 +1,4 @@
-<!-- 
+<!--
     This is the HTML file that governs the page's contents!
 -->
 
@@ -9,20 +9,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Relay Me</title>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 	<div class="middle">
-      <span id="quote">Welcome Tech Wizard!</span>
-      <br>
-      <br>
-      Want to enter a relay with other wizards? Fill out our profile and we'll provide a list of custom matched recommendations.
-
-     <button>Sign up</button> 
-     <button>Login</button>
+	    <img src="assets/linkedin.png" class="logo">
+        <h4 id="quote">Welcome, Rue!</h4>
+        <p>Get ready to enter the race with others!</p>
+        <p>Need a break to stretch and rest?</p>
+        <button class="btn" id="signout">Sign out</button>
+        <div>
+            <p>Hide your profile</p>
+        </div>
+        <div class ="toggle">
+            <p id="feedback"></p>
+            <label for="displayProfile" class="switch">
+                <input type="checkbox" id="displayProfile" name="displayProfile" >
+                <span class="slider"></span>
+            </label>
+        </div>
     </div>
 
 </body>
